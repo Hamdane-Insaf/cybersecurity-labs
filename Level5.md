@@ -1,39 +1,23 @@
 # Bandit - Niveau 5 → Niveau 6
-
 ## Objectif
-
 Le mot de passe permettant d'accéder au **niveau 6** est stocké dans un fichier situé quelque part dans le répertoire **`inhere`**.
-
 Le fichier recherché possède les caractéristiques suivantes :
-
 - il est **lisible par un humain** ;
 - sa taille est exactement de **1033 octets** ;
 - il **n'est pas exécutable**.
-
 L'objectif est de retrouver ce fichier puis d'afficher son contenu.
-
 ---
-
 ## Problème rencontré
-
 Le répertoire `inhere` contient plusieurs sous-répertoires et un grand nombre de fichiers.
-
 Il serait très long de vérifier chaque fichier manuellement. La commande **`find`** permet de rechercher automatiquement un fichier selon plusieurs critères (taille, permissions, type, etc.).
-
 ---
-
 ## Commandes utilisées
-
 - `cd`
 - `find`
 - `cat`
-
 ---
-
 ## Étape 1 : Accéder au répertoire
-
 Depuis le répertoire personnel :
-
 ```bash
 cd inhere
 ```
@@ -68,7 +52,6 @@ Quitter la session actuelle :
 exit
 ```
 Puis se connecter avec l'utilisateur **bandit6** :
-
 ```bash
 ssh bandit6@bandit.labs.overthewire.org -p 2220
 ```
@@ -114,14 +97,6 @@ cat chemin_du_fichier
           ▼
 ssh bandit6@bandit.labs.overthewire.org -p 2220
 ```
----
-## Compétences acquises
-À la fin de ce niveau, vous savez :
-- utiliser la commande **`find`** pour rechercher des fichiers ;
-- filtrer les fichiers selon leur **type** ;
-- rechercher un fichier selon sa **taille** ;
-- vérifier les **permissions** d'un fichier (lisible, exécutable) ;
-- combiner plusieurs critères dans une seule commande.
 ---
 ## Bonnes pratiques
 La commande **`find`** est l'un des outils les plus puissants de Linux pour rechercher des fichiers. Elle permet de combiner plusieurs critères (nom, taille, permissions, date de modification, propriétaire, etc.) afin de localiser rapidement un fichier précis, même dans une arborescence contenant des centaines de répertoires.

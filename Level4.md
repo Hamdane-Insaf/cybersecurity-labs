@@ -61,9 +61,9 @@ Le fichier identifié comme **`ASCII text`** (ou **texte lisible**) est celui qu
 ## Étape 4 : Lire le contenu du fichier
 Afficher le contenu du fichier identifié :
 ```bash
-cat ./-file02
+cat ./-file07
 ```
-> **Remarque :** Le nom du fichier (`-file02` dans cet exemple) peut être différent. Utilisez toujours celui que la commande `file` indique comme étant un fichier texte (`ASCII text`).
+> **Remarque :** Le nom du fichier (`-file07` dans cet exemple) peut être différent. Utilisez toujours celui que la commande `file` indique comme étant un fichier texte (`ASCII text`).
 Le terminal affiche alors le mot de passe du niveau suivant.
 ---
 ## Étape 5 : Se connecter au niveau suivant
@@ -119,14 +119,6 @@ cat ./nom_du_fichier
           ▼
 ssh bandit5@bandit.labs.overthewire.org -p 2220
 ```
----
-## Compétences acquises
-À la fin de ce niveau, vous savez :
-- utiliser la commande **`file`** pour identifier le type d'un fichier ;
-- distinguer un fichier texte d'un fichier binaire ;
-- utiliser le caractère générique **`*`** pour sélectionner plusieurs fichiers ;
-- comprendre l'intérêt du préfixe **`./`** lorsque les noms de fichiers commencent par un tiret (`-`) ;
-- afficher le contenu d'un fichier avec **`cat`**.
 ---
 ## Bonnes pratiques
 Avant d'ouvrir un fichier inconnu, il est recommandé d'utiliser la commande **`file`** afin d'identifier son type. Cette commande permet de savoir rapidement s'il s'agit d'un fichier texte, d'un exécutable, d'une image, d'une archive ou d'un fichier binaire.
